@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from "vue";
 import Navbar from "./components/Navbar.vue";
 </script>
 
@@ -16,4 +15,5 @@ import Navbar from "./components/Navbar.vue";
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>

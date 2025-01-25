@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+:root {
+    --soft-purple: #6B4F9C; /* Primary accents, buttons, or headings */
+    --vibrant-pink: #EC4899; /* Emphasis, important buttons, or call-to-action */
+    --muted-lavender: #E9D5FF; /* Light background shades or secondary elements */
+    --charcoal: #2D3748; /* Dark text or dark background elements */
+    --slate: #4A5568; /* Text, borders, or secondary UI elements */
+    --soft-gray: #2B2D42; /* Light text or background shades */
+    --pale-peach: #F9E4D4; /* Background elements or highlights */
+    --light-tan: #D6C1A1; /* Background accents or neutral UI elements */
+    --dark-charcoal: #1A202C; /* Deep backgrounds or dark UI elements */
+    --soft-green: #34D399; /* Success messages or positive UI elements */
+    --bright-red: #EF4444; /* Error messages or alerts */
+    --warm-yellow: #FBBF24; /* Warning messages or attention-grabbing elements */
+}
