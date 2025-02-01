@@ -1,19 +1,14 @@
-<script setup>
-import Navbar from "./components/Navbar.vue";
+<script>
+
 </script>
 
 <template>
   <div class="min-h-screen flex flex-col bg-white">
-    <header>
-      <Navbar />
-    </header>
-
-    <main class="flex-grow container mx-auto p-4">
+    <main class="flex-grow container mx-auto">
       <router-view />
     </main>
 
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
