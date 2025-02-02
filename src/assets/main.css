@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
-:root {
+@theme {
     /* Primary Colors */
-    --soft-purple: #6B4F9C; /* Primary accents, buttons, or headings */
-    --vibrant-pink: #EC4899; /* Hover effect for buttons, emphasis */
-    --muted-lavender: #E9D5FF; /* Light background shades or secondary elements */
+    --color-soft-purple: #6B4F9C; /* Primary accents, buttons, or headings */
+    --color-vibrant-pink: #EC4899; /* Hover effect for buttons, emphasis */
+    --color-muted-lavender: #E9D5FF; /* Light background shades or secondary elements */
 
     /* Text & Background Colors */
-    --charcoal: #2D3748; /* Dark text or dark background elements */
-    --slate: #4A5568; /* Text, borders, or secondary UI elements */
-    --soft-gray: #2B2D42; /* Light text or background shades */
-    --pale-peach: #F9E4D4; /* Background elements or highlights */
-    --light-tan: #D6C1A1; /* Background accents or neutral UI elements */
-    --dark-charcoal: #1A202C; /* Deep backgrounds or dark UI elements */
+    --color-charcoal: #2D3748; /* Dark text or dark background elements */
+    --color-slate: #4A5568; /* Text, borders, or secondary UI elements */
+    --color-soft-gray: #2B2D42; /* Light text or background shades */
+    --color-pale-peach: #F9E4D4; /* Background elements or highlights */
+    --color-light-tan: #D6C1A1; /* Background accents or neutral UI elements */
+    --color-dark-charcoal: #1A202C; /* Deep backgrounds or dark UI elements */
 
     /* Alert Colors */
-    --soft-green: #34D399; /* Success messages */
-    --bright-red: #EF4444; /* Error messages */
-    --warm-yellow: #FBBF24; /* Warning messages */
+    --color-soft-green: #34D399; /* Success messages */
+    --color-bright-red: #EF4444; /* Error messages */
+    --color-warm-yellow: #FBBF24; /* Warning messages */
 }
