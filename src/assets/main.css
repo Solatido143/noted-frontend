@@ -1,18 +1,21 @@
 @import "tailwindcss";
 
 :root {
-    --button-accent: #5A6F77; /* Calm, neutral button accents */
-    --cta-button: #1C8D73; /* Call-to-action buttons or important highlights */
-    --background-light: #F5D0C5; /* Soft background color for hover effects or lighter sections */
-    
-    --secondary-text: #6B7280; /* Secondary text or borders */
-    --background-main: #F0F4F8; /* Main background color for clean sections or pages */
-    --highlight-accent: #F2D0A4; /* Subtle highlights or background accents */
-    --focus-background: #D9A5B3; /* Focus or selection background */
-    --dark-text: #36454F; /* Primary dark text, headers, or main contrast areas */
+    /* Primary Colors */
+    --soft-purple: #6B4F9C; /* Primary accents, buttons, or headings */
+    --vibrant-pink: #EC4899; /* Hover effect for buttons, emphasis */
+    --muted-lavender: #E9D5FF; /* Light background shades or secondary elements */
 
-    --success-element: #4A7C59; /* Success-related UI elements (e.g., success messages) */
-    --link-active: #4F9D9D; /* Active or hover links, interactive elements */
-    --error-alert: #D84B16; /* Error messages, alerts, or critical notifications */
-    --warning-highlight: #F1C40F; /* Attention-grabbing buttons, warnings, or important messages */
+    /* Text & Background Colors */
+    --charcoal: #2D3748; /* Dark text or dark background elements */
+    --slate: #4A5568; /* Text, borders, or secondary UI elements */
+    --soft-gray: #2B2D42; /* Light text or background shades */
+    --pale-peach: #F9E4D4; /* Background elements or highlights */
+    --light-tan: #D6C1A1; /* Background accents or neutral UI elements */
+    --dark-charcoal: #1A202C; /* Deep backgrounds or dark UI elements */
+
+    /* Alert Colors */
+    --soft-green: #34D399; /* Success messages */
+    --bright-red: #EF4444; /* Error messages */
+    --warm-yellow: #FBBF24; /* Warning messages */
 }
