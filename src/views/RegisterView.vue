@@ -2,7 +2,7 @@
 
 </script>
 <template>
-    <div class="min-h-screen flex items-center justify-center bg-pale-peach dark:bg-dark-charcoal">
+    <div class="min-h-screen flex items-center justify-center">
         <div class="w-full max-w-md p-6 bg-white dark:bg-charcoal rounded-lg shadow-md">
             <h2 class="text-2xl font-semibold text-center text-soft-purple dark:text-muted-lavender">
                 Create an Account
@@ -21,24 +21,27 @@
                         required />
                 </div>
                 <div class="mt-4">
-                    <label for="password" class="block text-sm font-medium text-slate dark:text-light-tan">Password</label>
+                    <label for="password"
+                        class="block text-sm font-medium text-slate dark:text-light-tan">Password</label>
                     <input type="password" id="password"
                         class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-purple dark:bg-soft-gray dark:text-white"
                         required />
                 </div>
                 <div class="mt-4">
-                    <label for="confirm-password" class="block text-sm font-medium text-slate dark:text-light-tan">Confirm Password</label>
+                    <label for="confirm-password"
+                        class="block text-sm font-medium text-slate dark:text-light-tan">Confirm Password</label>
                     <input type="password" id="confirm-password"
                         class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-purple dark:bg-soft-gray dark:text-white"
                         required />
                 </div>
                 <button type="submit"
-                    class="w-full mt-6 px-4 py-2 text-white bg-blue-900 rounded-lg hover:bg-vibrant-pink focus:ring-2 focus:ring-vibrant-pink">
+                    class="w-full mt-6 px-4 py-2 text-white bg-soft-purple rounded-lg hover:bg-vibrant-pink focus:ring-2 focus:ring-vibrant-pink">
                     Register
                 </button>
             </form>
             <p class="mt-4 text-center text-sm text-slate dark:text-light-tan">
-                Already have an account? <router-link to="/login" class="text-vibrant-pink hover:underline">Login</router-link>
+                Already have an account? <router-link to="/login"
+                    class="text-vibrant-pink hover:underline">Login</router-link>
             </p>
         </div>
     </div>
