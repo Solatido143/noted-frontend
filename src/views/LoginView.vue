@@ -3,7 +3,7 @@
 </script>
 <template>
     <div class="min-h-screen flex items-center justify-center">
-        <div class="w-full max-w-md p-6 bg-white dark:bg-charcoal rounded-lg shadow-md">
+        <div class="w-full max-w-md p-6 bg-white dark:bg-dark-charcoal rounded-lg shadow-md">
             <h2 class="text-2xl font-semibold text-center text-soft-purple dark:text-muted-lavender">
                 Login to Noted
             </h2>
