@@ -9,14 +9,8 @@
             </h2>
             <form class="mt-6">
                 <div>
-                    <label for="name" class="block text-sm font-medium text-slate dark:text-light-tan">Full Name</label>
+                    <label for="name" class="block text-sm font-medium text-slate dark:text-light-tan">Username</label>
                     <input type="text" id="name"
-                        class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-purple dark:bg-soft-gray dark:text-white"
-                        required />
-                </div>
-                <div class="mt-4">
-                    <label for="email" class="block text-sm font-medium text-slate dark:text-light-tan">Email</label>
-                    <input type="email" id="email"
                         class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-purple dark:bg-soft-gray dark:text-white"
                         required />
                 </div>
@@ -35,7 +29,7 @@
                         required />
                 </div>
                 <button type="submit"
-                    class="w-full mt-6 px-4 py-2 text-white bg-soft-purple rounded-lg hover:bg-vibrant-pink focus:ring-2 focus:ring-vibrant-pink">
+                    class="w-full mt-6 px-4 py-2 text-white bg-soft-purple rounded-lg hover:bg-vibrant-pink focus:ring-2 focus:ring-vibrant-pink transition ease-out ">
                     Register
                 </button>
             </form>
