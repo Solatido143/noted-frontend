@@ -14,7 +14,7 @@ export default {
     </header>
 
     <main class="min-h-screen bg-pale-peach dark:bg-dark-charcoal text-gray-900 dark:text-white">
-        <section class="min-h-screen flex items-center justify-center">
+        <section class="min-h-screen flex items-center justify-center bg-white dark:bg-soft-gray">
             <div class="flex flex-col items-center justify-center text-center py-20">
                 <h1 class="text-4xl font-bold text-soft-purple">Welcome to Noted</h1>
                 <p class="mt-4 text-lg text-custom-slate dark:text-light-tan max-w-xl">
@@ -45,7 +45,7 @@ export default {
             </div>
         </section>
 
-        <section class="text-center py-10">
+        <section class="text-center py-10 bg-white dark:bg-soft-gray">
             <h2 class="text-3xl font-bold text-soft-purple">Start Managing Your Tasks Today!</h2>
             <p class="mt-4 text-lg text-custom-slate dark:text-light-tan">Sign up now and boost your productivity.</p>
             <router-link to="/register"
