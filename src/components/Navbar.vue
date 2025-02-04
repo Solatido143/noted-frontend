@@ -29,22 +29,31 @@
                         </router-link>
                     </li>
                     <li>
+                        <router-link to="/about"
+                            class="block py-2 px-3 text-charcoal rounded-sm hover:bg-soft-gray md:hover:bg-transparent md:hover:text-soft-purple md:p-0 md:dark:hover:text-soft-green dark:text-pale-peach dark:hover:bg-charcoal dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate">
+                            About
+                        </router-link>
+                    </li>
+                    <li v-if="authStore.isAuthenticated">
                         <router-link to="/projects"
                             class="block py-2 px-3 text-charcoal rounded-sm hover:bg-soft-gray md:hover:bg-transparent md:hover:text-soft-purple md:p-0 md:dark:hover:text-soft-green dark:text-pale-peach dark:hover:bg-charcoal dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate">
                             Projects
                         </router-link>
                     </li>
-                    <li>
+                    <li v-if="!authStore.isAuthenticated">
                         <router-link to="/login"
                             class="block py-2 px-3 text-charcoal rounded-sm hover:bg-soft-gray md:hover:bg-transparent md:hover:text-soft-purple md:p-0 md:dark:hover:text-soft-green dark:text-pale-peach dark:hover:bg-charcoal dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate">
                             Login
                         </router-link>
                     </li>
-                    <li>
+                    <li v-if="!authStore.isAuthenticated">
                         <router-link to="/register"
                             class="block py-2 px-3 text-charcoal rounded-sm hover:bg-soft-gray md:hover:bg-transparent md:hover:text-soft-purple md:p-0 md:dark:hover:text-soft-green dark:text-pale-peach dark:hover:bg-charcoal dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate">
                             Register
                         </router-link>
+                    </li>
+                    <li v-if="authStore.isAuthenticated">
+                        <button @click="authStore.logout()" class="block py-2 px-3 text-charcoal rounded-sm hover:bg-soft-gray md:hover:bg-transparent md:hover:text-soft-purple md:p-0 md:dark:hover:text-soft-green dark:text-pale-peach dark:hover:bg-charcoal dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate">Logout</button>
                     </li>
                 </ul>
             </div>
@@ -54,7 +63,9 @@
 
 <script setup>
 import { ref } from 'vue';
+import { useAuthStore } from '@/stores/authStore'
 
+const authStore = useAuthStore();
 const navbar = ref(null);
 
 const toggleNavbar = () => {
