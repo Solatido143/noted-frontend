@@ -2,8 +2,11 @@
 import { ref } from 'vue'
 import { login } from '@/services/authService'
 import { useRouter } from 'vue-router'
+import { useAuthStore } from '@/stores/authStore'
 
+const authStore = useAuthStore()
 const router = useRouter()
+
 const username = ref('')
 const password = ref('')
 const errorMessage = ref('')
@@ -12,9 +15,10 @@ const handleLogin = async () => {
     errorMessage.value = ''
     try {
         const response = await login(username.value, password.value)
-        
+
         if (response === "OK") {
-            router.push('/')
+            authStore.login()
+            router.push('/projects')
         } else {
             errorMessage.value = 'Unexpected response from server'
         }
