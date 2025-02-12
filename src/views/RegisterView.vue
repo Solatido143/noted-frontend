@@ -26,9 +26,9 @@ const handleRegister = async () => {
     }
 
     try {
-        const response = await register(username.value, password.value);
+        const response = await register(username.value, displayName.value, password.value);
 
-        if (response === "OK") {
+        if (response._id && response.username && response.displayName) {
             errorMessage.value = '';
             router.push('/login');
         } else {
@@ -37,6 +37,7 @@ const handleRegister = async () => {
     } catch (error) {
         errorMessage.value = error.response?.data?.message || 'Registration failed. Please try again.';
     }
+
 };
 </script>
 
