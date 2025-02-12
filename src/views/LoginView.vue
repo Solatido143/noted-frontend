@@ -18,12 +18,13 @@ const handleLogin = async () => {
 
         if (response === "OK") {
             authStore.login()
+            errorMessage.value = '';
             router.push('/projects')
         } else {
             errorMessage.value = 'Unexpected response from server'
         }
     } catch (error) {
-        errorMessage.value = error || 'Login failed. Please try again.'
+        errorMessage.value = error.message || 'Login failed. Please try again.'
     }
 }
 
@@ -39,14 +40,14 @@ const handleLogin = async () => {
                 <div>
                     <label for="username"
                         class="block text-sm font-medium text-slate dark:text-light-tan">Username</label>
-                    <input v-model="username" type="text" id="username"
+                    <input v-model="username" type="text" id="username" autocomplete="username"
                         class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-purple dark:bg-soft-gray dark:text-white"
                         required />
                 </div>
                 <div class="mt-4">
                     <label for="password"
                         class="block text-sm font-medium text-slate dark:text-light-tan">Password</label>
-                    <input v-model="password" type="password" id="password"
+                    <input v-model="password" type="password" id="password" autocomplete="current-password"
                         class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-purple dark:bg-soft-gray dark:text-white"
                         required />
                 </div>
@@ -60,7 +61,7 @@ const handleLogin = async () => {
                     class="w-full mt-6 px-4 py-2 text-white bg-soft-purple rounded-lg hover:bg-vibrant-pink focus:ring-2 focus:ring-vibrant-pink">
                     Login
                 </button>
-                <div v-if="errorMessage" class="mb-4 text-sm text-red-500">
+                <div v-if="errorMessage" class="mb-4 text-sm text-bright-red">
                     {{ errorMessage }}
                 </div>
             </form>
